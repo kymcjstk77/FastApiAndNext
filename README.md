@@ -20,7 +20,9 @@ npm error request to https://registry.npmjs.org/create-next-app failed, reason: 
 * 기본구조 변경  - app기본 폴더 사용하지 않음 (파일명변경처리 또는 폴더삭제) + pages폴더내 _app.tsx로 기본설정
 
 
-*package.json 내 dependenices에 필요 라이브러리 추가설정 - npm install dayjs.....
+* package.json 내 dependenices에 필요 라이브러리 추가설정 - npm install dayjs.....
+* jsx 자바스크립트 확장 문법(리엑트에서 ui를 쉽게 작성할수 있도록 코드변환처리등..)
+* npm install --save-dev @types/react
 
 
 ## FastAPI 설치/구성 순서
