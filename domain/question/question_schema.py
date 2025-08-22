@@ -12,8 +12,8 @@ class Question(BaseModel):
     create_date: datetime.datetime
  ##   answers: list[Answer] = []
 
-    class Config:
-        orm_mode = True ## model 자동으로 스카마 매핑처리 
+    ##class Config:
+    ##    orm_mode = True ## model 자동으로 스카마 매핑처리
 
 
 class QuestionCreate(BaseModel):
