@@ -22,7 +22,20 @@ npm error request to https://registry.npmjs.org/create-next-app failed, reason: 
 
 * package.json 내 dependenices에 필요 라이브러리 추가설정 - npm install dayjs.....
 * jsx 자바스크립트 확장 문법(리엑트에서 ui를 쉽게 작성할수 있도록 코드변환처리등..)
-* npm install --save-dev @types/react
+* npm install --save-dev @types/react 
+* agGuid설치 npm i ag-grid-community ag-grid-react  --save
+* @tanstack/react-query @tanstack/react-query-devtools 설치 (Tanstack Query는 서버 상태 관리 라이브러리로, 복잡하고 장황한 코드를 필요로 하지 않고, 상태 관리와 데이터 fetching을 간편하게 해준다.)
+* npx @next/codemod built-in-next-font 폰트설치 및 갱신처리
+* npm install react-router-dom 설치
+* npm i axios
+* npm i react-query* 
+* npm install @zodios/react @zodios/core axios zod 설치
+* npm install @tanstack/react-query @tanstack/react-query-devtools
+* npm i zod 또는 npm install @zodios/core @zodios/express next zod axios react react-dom
+* npm install --global corepack@latest
+
+
+* 기본구조 src 내,  app(제거), libs(공통 스크립트의 패키지), utils(공통 스크립트 실파일), stores(dom, 데이터 스크립트저장함수), types(공통 타입스크립트), pages(ui 페이지), components(컨텐츠ui페이지), templates(컨텐츠내 템플릿ui페이지), pubic(물리 폰트,이미지등 폴더경로) 폴더로 구성
 
 
 ## FastAPI 설치/구성 순서
