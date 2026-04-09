@@ -7,6 +7,7 @@
 * npm run dev
 
 ## FrontEnd 서버 설치
+* npm install -g pnpm@latest-10
 * nodejs 다운로드/설치
 * VSCode 터미널에서 npm 사용 시 발생하는 "이 시스템에서 스크립트를 실행할 수 없으므로..." 오류는 Windows의 보안 정책으로 인해 스크립트 실행이 차단되어 발생하는 현상입니다. 이 문제를 해결하기 위해 PowerShell 관리자 권한 실행 후 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser 명령어를 입력하여 스크립트 실행 정책을 변경하거나, VSCode 터미널을 cmd (명령 프롬프트)로 변경하여 실행해야 합니다. 
 * npx create-next-app@latest  next.js 설치
@@ -33,10 +34,10 @@ npm error request to https://registry.npmjs.org/create-next-app failed, reason: 
 * npm install @tanstack/react-query @tanstack/react-query-devtools
 * npm i zod 또는 npm install @zodios/core @zodios/express next zod axios react react-dom
 * npm install --global corepack@latest
-
+* npm install -D openapi-zod-client 설치 (api 설정)
+* npx openapi-zod-client http://localhost:8000/openapi.json -o src/_generated/index.ts --with-deprecated --export-schemas --complexity-threshold --with-alias  (예: fastapi의 api정보들을 index.ts로 세팅처리)
 
 * 기본구조 src 내,  app(제거), libs(공통 스크립트의 패키지), utils(공통 스크립트 실파일), stores(dom, 데이터 스크립트저장함수), types(공통 타입스크립트), pages(ui 페이지), components(컨텐츠ui페이지), templates(컨텐츠내 템플릿ui페이지), pubic(물리 폰트,이미지등 폴더경로) 폴더로 구성
-
 
 ## FastAPI 설치/구성 순서
 1. 파이썬 파일 다운로드 및 설치
